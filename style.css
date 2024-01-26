@@ -1,0 +1,613 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+ol,
+ul {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------ Heder section ------------------------------ */
+
+header {
+    background-image: url(image/header1.jpg);
+    background-size: cover;
+    height: 945px;
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    padding: 25px;
+    display: grid;
+    place-items: center;
+
+}
+
+header table {
+    margin-top: 50px;
+    position: fixed;
+}
+
+header table td {
+    font-size: 30px;
+}
+
+header table a {
+    font-size: 27px;
+    padding: 10px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header table a:hover {
+    background-color: #e9ebf0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 800;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 300px;
+}
+
+
+
+
+/* ---------------------------- Main menu section ---------------------------- */
+
+.main-menu {
+    background-image: url(image/mainmenu.jpg);
+    background-size: cover;
+    height: 945px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+}
+
+.main-menu h2 {
+    text-align: center;
+    width: 1000px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #ba2d61;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 5px 0px 5px 0px;
+}
+
+.main-menu h3 {
+    width: 500px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ba2d61;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.main-menu img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 2px solid #f5aecc;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.details {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.details td {
+    font-size: 25px;
+    padding: 3px 10px 3px 10px;
+}
+
+.details td h1 {
+    margin-left: 130px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* ---------------------------- Abount me section ---------------------------- */
+
+.aboutme {
+    height: 945px;
+    background-image: url(image/aboutme.jpg);
+    padding-top: 140px;
+    background-repeat: no-repeat;
+}
+
+.aboutcontent {
+    width: 50%;
+}
+
+.aboutcontent h1 {
+    text-align: center;
+    width: 600px;
+    font-size: 50px;
+    margin-top: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #80ceff;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    padding: 5px 0px 5px 0px;
+}
+
+.aboutcontent p {
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+.icon {
+    margin: 20px;
+}
+
+.icon h1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.icon img {
+    height: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* ---------------------------- Education me section ---------------------------- */
+
+#Education {
+    height: 945px;
+    background-image: url(image/Education.jpg);
+    padding-top: 150px;
+    background-repeat: no-repeat;
+}
+
+.edu {
+    width: 50%;
+    height: 700px;
+    margin-left: 150px;
+}
+
+.edu h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #6f9860;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 5px 0px 5px 0px;
+}
+
+.edu h2 {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.edu h3 {
+    font-size: 25px;
+}
+
+.edu h4 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 50%;
+}
+
+.edu img {
+    height: 120px;
+    margin-top: 50px;
+}
+
+
+
+/* ---------------------------- Project section ---------------------------- */
+
+#project {
+    height: 945px;
+    background-image: url(image/Project.jpg);
+    padding-top: 200px;
+    background-repeat: no-repeat;
+}
+
+.Pro {
+    width: 40%;
+    height: 650px;
+    margin-left: 45%;
+}
+
+.Pro h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #b2a18f;
+    margin-bottom: 50px;
+    padding: 5px 0px 5px 0px;
+}
+
+.picture {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.picture img {
+    width: 200px;
+    height: 120px;
+    background-color: #282a36;
+    margin-left: 40px;
+}
+
+.picture h2 {
+    font-size: 35px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.picture p {
+    font-size: 23px;
+    opacity: 50%;
+}
+
+
+
+/* ---------------------------- Contact infor section ---------------------------- */
+
+#ContactInfor {
+    height: 700px;
+    background-image: url(image/contactInfor.jpg);
+    padding-top: 150px;
+    background-repeat: no-repeat;
+}
+
+.contact {
+    width: 40%;
+    height: 700px;
+
+    margin-left: 150px;
+}
+
+.contact h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #bbada0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 5px 0px 5px 0px;
+}
+
+.infor {
+    width: 700px;
+    height: 400px;
+
+
+}
+
+.infor tr {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+.infor td {
+
+    padding: 20px 0px 5px 30px;
+}
+
+
+
+/* ---------------------------- footer section ---------------------------- */
+
+footer {
+    height: 245px;
+    background-color: #282a36;
+    padding-top: 30px;
+}
+
+footer .image{
+    display: flex;
+    width: 320px;
+    height: 120px;   
+}
+footer img {
+    width: 70px;
+    height: 70px;
+    margin: 30px 20px;
+}
+
+footer h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e9ebf0;
+    text-align: center;
+}
+
+
+
+
+/* ---------------------------- Media section ---------------------------- */
+
+@media screen and (max-width: 1540px) {
+    header {
+        background-size: contain;
+        background-size: cover;
+        height: 732px;
+    }
+
+    header table {
+        margin-top: 35px;
+    }
+
+    header table a {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        margin-top: 300px;
+    }
+
+
+    .main-menu {
+        background-size: contain;
+        height: 732px;
+    }
+
+    .main-menu h2 {
+
+        width: 600px;
+        font-size: 35px;
+        margin-bottom: 24px;
+    }
+
+    .main-menu h3 {
+        width: 500px;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .main-menu img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .details {
+        margin-top: 30px;
+    }
+
+    .details td {
+        font-size: 20px;
+        padding: 3px 5px 3px 5px;
+    }
+
+    .details td h1 {
+        margin-left: 170px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+    .aboutme {
+        background-image: url(image/aboutme.jpg);
+        background-size: contain;
+        background-size: cover;
+        height: 732px;
+    }
+
+    .aboutcontent h1 {
+        text-align: center;
+        width: 500px;
+        font-size: 35px;
+        margin-top: 150px;
+    }
+
+    .aboutcontent p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
+
+    .icon h1 {
+        font-size: 23px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .icon img {
+        height: 70px;
+        padding: 10px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+
+    #Education {
+        background-size: contain;
+        background-size: cover;
+        height: 732px;
+    }
+
+    .edu {
+        width: 50%;
+        height: 580px;
+        margin-left: 150px;
+    }
+
+    .edu h1 {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .edu h2 {
+        font-size: 27px;
+    }
+
+    .edu h3 {
+        font-size: 18px;
+    }
+
+    .edu h4 {
+        font-size: 17px;
+        opacity: 50%;
+    }
+
+    .edu img {
+        height: 100px;
+        margin-top: 30px;
+    }
+
+
+    #project {
+        background-image: url(image/Project.jpg);
+        background-size: contain;
+        background-size: cover;
+        height: 732px;
+    }
+
+    .Pro {
+        width: 40%;
+        height: 500px;
+        margin-left: 45%;
+        margin-top: -20px;
+    }
+
+    .Pro h1 {
+        font-size: 35px;
+        margin-bottom: 35px;
+        padding: 5px 0px 5px 0px;
+    }
+
+    .picture {
+        width: 100%;
+        display: flex;
+        margin-bottom: 35px;
+    }
+
+    .picture img {
+        width: 150px;
+        height: 80px;
+    }
+
+    .picture h2 {
+        font-size: 25px;
+        height: 80px;
+    }
+
+    .picture p {
+        font-size: 20px;
+    }
+
+
+
+    #ContactInfor {
+        background-image: url(image/contactInfor.jpg);
+        background-size: contain;
+        background-size: cover;
+        height: 500px;
+    }
+
+    .contact {
+        width: 40%;
+        height: 500px;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+
+    .contact h1 {
+        font-size: 35px;
+        margin-bottom: 23px;
+    }
+
+    .infor tr {
+        font-size: 25px;
+    }
+
+    .infor td {
+        padding: 13px 0px 5px 30px;
+    }
+
+
+}
